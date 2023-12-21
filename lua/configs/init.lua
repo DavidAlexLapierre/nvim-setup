@@ -1,0 +1,5 @@
+require("configs.dracula")
+require("configs.lualine")
+require("configs.nvimtree")
+require("configs.treesitter")
+require("configs.fzf")

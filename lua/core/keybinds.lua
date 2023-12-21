@@ -1,7 +1,8 @@
 
 
 -- Terminal
-vim.keymap.set('n', '<M-q>', ':split<CR>:wincmd j<CR>:resize 20<CR>:term<CR>i', { noremap = true, silent = true })
+vim.keymap.set('n', '<M-q>', ':split<CR>:wincmd j<CR>:resize 15<CR>:lcd %:p:h<CR>:terminal powershell<CR>i')
+vim.keymap.set('n', '<M-e>', ':split<CR>:wincmd j<CR>:resize 15<CR>:terminal powershell<CR>i')
 
 
 -- Window control

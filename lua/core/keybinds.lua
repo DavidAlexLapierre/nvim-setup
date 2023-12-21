@@ -1,7 +1,7 @@
 
 
 -- Terminal
-vim.api.nvim_set_keymap('n', '<M-q>', ':split<CR>:wincmd j<CR>:term<CR>i', { noremap = true, silent = true })
+vim.keymap.set('n', '<M-q>', ':split<CR>:wincmd j<CR>:resize 20<CR>:term<CR>i', { noremap = true, silent = true })
 
 
 -- Window control

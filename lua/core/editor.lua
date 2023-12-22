@@ -14,3 +14,4 @@ vim.opt.shiftround = true
 vim.opt.expandtab = true
 
 vim.wo.relativenumber = true
+vim.o.scrolloff = 999

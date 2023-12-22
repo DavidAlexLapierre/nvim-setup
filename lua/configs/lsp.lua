@@ -9,9 +9,16 @@ require('mason-lspconfig').setup({
 })
 
 local lspconfig = require('lspconfig')
-lspconfig.tsserver.setup({})
-lspconfig.csharp_ls.setup({})
-lspconfig.clangd.setup({})
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+lspconfig.tsserver.setup({
+    capabilities = capabilities,
+})
+lspconfig.csharp_ls.setup({
+    capabilities = capabilities,
+})
+lspconfig.clangd.setup({
+    capabilities = capabilities,
+})
 
 
 vim.api.nvim_create_autocmd('LspAttach', {

@@ -3,8 +3,10 @@ require('mason').setup()
 require('mason-lspconfig').setup({
     ensure_installed = { 
         'tsserver',
+        'lua_ls',
         'csharp_ls',
-        'clangd'
+        'clangd',
+        'pylsp',
     }
 })
 
@@ -13,10 +15,17 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 lspconfig.tsserver.setup({
     capabilities = capabilities,
 })
+lspconfig.lua_ls.setup({
+    capabilities = capabilities,
+})
 lspconfig.csharp_ls.setup({
     capabilities = capabilities,
 })
 lspconfig.clangd.setup({
+    capabilities = capabilities,
+    cmd = { 'clangd', '--background-index', '--compile-commands-dir=out', '-DWINDOWS' },
+})
+lspconfig.pylsp.setup({
     capabilities = capabilities,
 })
 

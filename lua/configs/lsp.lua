@@ -23,7 +23,6 @@ lspconfig.csharp_ls.setup({
 })
 lspconfig.clangd.setup({
     capabilities = capabilities,
-    cmd = { 'clangd', '--background-index', '--compile-commands-dir=out', '-DWINDOWS' },
 })
 lspconfig.pylsp.setup({
     capabilities = capabilities,

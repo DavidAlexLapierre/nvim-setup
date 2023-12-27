@@ -7,6 +7,7 @@ require('mason-lspconfig').setup({
         'csharp_ls',
         'clangd',
         'pylsp',
+        'jsonls'
     }
 })
 
@@ -26,6 +27,9 @@ lspconfig.clangd.setup({
 })
 lspconfig.pylsp.setup({
     capabilities = capabilities,
+})
+lspconfig.jsonls.setup({
+    capabiliyies = capabilities,
 })
 
 

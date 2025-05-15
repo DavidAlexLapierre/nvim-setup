@@ -17,7 +17,7 @@ return require('packer').startup(function(use)
   use 'nvim-tree/nvim-tree.lua'
   use 'nvim-tree/nvim-web-devicons'
   use 'nvim-lualine/lualine.nvim'
-  use 'nvim-treesitter/nvim-treesitter'
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use { 'junegunn/fzf', run = ":call fzf#install()" }
   use { 'junegunn/fzf.vim' }
   use ({
@@ -32,6 +32,13 @@ return require('packer').startup(function(use)
   use 'hrsh7th/cmp-cmdline'
   use 'L3MON4D3/LuaSnip'
   use 'saadparwaiz1/cmp_luasnip'
+  use {
+    'daltonmenezes/aura-theme',
+    rtp = 'packages/neovim',
+    config = function()
+        vim.cmd("colorscheme aura-dark") -- Or any Aura theme available
+    end
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

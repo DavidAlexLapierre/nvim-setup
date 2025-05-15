@@ -34,6 +34,7 @@ return require('packer').startup(function(use)
         vim.cmd("colorscheme aura-dark") -- Or any Aura theme available
     end
   }
+  use 'xiyaowong/transparent.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

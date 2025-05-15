@@ -13,8 +13,8 @@ require'nvim-treesitter.configs'.setup {
         'hlsl',
         'glsl',
         'python',
-        'json'
-
+        'json',
+        'odin'
     },
     sync_install = false,
     auto_install = true,

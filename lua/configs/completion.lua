@@ -13,7 +13,7 @@ cmp.setup({
       documentation = cmp.config.window.bordered(),
     },
     mapping = cmp.mapping.preset.insert({
-        ['<C-Space>'] = cmp.mapping.complete(),
+        ['<c-Space>'] = cmp.mapping.complete(),
         ['<CR>'] = cmp.mapping.confirm({ select = true}),
     }),
     sources = cmp.config.sources(

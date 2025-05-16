@@ -16,3 +16,6 @@ vim.opt.expandtab = true
 vim.wo.number = true
 vim.wo.relativenumber = true
 vim.o.scrolloff = 999
+
+local opt = vim.opt
+opt.wrap = false
